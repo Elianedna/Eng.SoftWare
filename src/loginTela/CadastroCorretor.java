@@ -34,18 +34,18 @@ public class CadastroCorretor extends javax.swing.JFrame
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        txtNom = new javax.swing.JTextField();
+        txtNomeCompleto = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        btnSignUp = new javax.swing.JButton();
+        btnCadastrarCorretor = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jPasswordField2 = new javax.swing.JPasswordField();
+        txtPassSenha1 = new javax.swing.JPasswordField();
+        txtPassSenha2 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,18 +70,18 @@ public class CadastroCorretor extends javax.swing.JFrame
         jLabel4.setText("Entre com os dados do corretor.");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
 
-        txtNom.setBackground(new java.awt.Color(102, 102, 102));
-        txtNom.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtNom.setForeground(new java.awt.Color(255, 255, 255));
-        txtNom.setText("Joao Apolinario");
-        txtNom.addMouseListener(new java.awt.event.MouseAdapter()
+        txtNomeCompleto.setBackground(new java.awt.Color(102, 102, 102));
+        txtNomeCompleto.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txtNomeCompleto.setForeground(new java.awt.Color(255, 255, 255));
+        txtNomeCompleto.setText("Joao Apolinario");
+        txtNomeCompleto.addMouseListener(new java.awt.event.MouseAdapter()
         {
             public void mouseEntered(java.awt.event.MouseEvent evt)
             {
-                txtNomMouseEntered(evt);
+                txtNomeCompletoMouseEntered(evt);
             }
         });
-        jPanel1.add(txtNom, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 290, -1));
+        jPanel1.add(txtNomeCompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 290, -1));
 
         txtEmail.setBackground(new java.awt.Color(102, 102, 102));
         txtEmail.setForeground(new java.awt.Color(255, 255, 255));
@@ -117,18 +117,18 @@ public class CadastroCorretor extends javax.swing.JFrame
         jLabel7.setText("E-mail");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 230, -1, -1));
 
-        btnSignUp.setBackground(new java.awt.Color(222, 154, 74));
-        btnSignUp.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnSignUp.setForeground(new java.awt.Color(255, 255, 255));
-        btnSignUp.setText("Cadastrar Corretor");
-        btnSignUp.addActionListener(new java.awt.event.ActionListener()
+        btnCadastrarCorretor.setBackground(new java.awt.Color(222, 154, 74));
+        btnCadastrarCorretor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCadastrarCorretor.setForeground(new java.awt.Color(255, 255, 255));
+        btnCadastrarCorretor.setText("Cadastrar Corretor");
+        btnCadastrarCorretor.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                btnSignUpActionPerformed(evt);
+                btnCadastrarCorretorActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 410, 160, -1));
+        jPanel1.add(btnCadastrarCorretor, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 410, 160, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(222, 154, 74));
@@ -146,15 +146,29 @@ public class CadastroCorretor extends javax.swing.JFrame
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginTela/corretor2.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPasswordField1.setBackground(new java.awt.Color(102, 102, 102));
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setText("jPasswordField1");
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 290, -1));
+        txtPassSenha1.setBackground(new java.awt.Color(102, 102, 102));
+        txtPassSenha1.setForeground(new java.awt.Color(255, 255, 255));
+        txtPassSenha1.setText("jPasswordField1");
+        txtPassSenha1.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                txtPassSenha1MouseEntered(evt);
+            }
+        });
+        jPanel1.add(txtPassSenha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 290, -1));
 
-        jPasswordField2.setBackground(new java.awt.Color(102, 102, 102));
-        jPasswordField2.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField2.setText("jPasswordField2");
-        jPanel1.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, 290, -1));
+        txtPassSenha2.setBackground(new java.awt.Color(102, 102, 102));
+        txtPassSenha2.setForeground(new java.awt.Color(255, 255, 255));
+        txtPassSenha2.setText("jPasswordField2");
+        txtPassSenha2.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseExited(java.awt.event.MouseEvent evt)
+            {
+                txtPassSenha2MouseExited(evt);
+            }
+        });
+        jPanel1.add(txtPassSenha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, 290, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -172,10 +186,10 @@ public class CadastroCorretor extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNomMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtNomMouseEntered
-    {//GEN-HEADEREND:event_txtNomMouseEntered
-        txtNom.setText("");        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomMouseEntered
+    private void txtNomeCompletoMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtNomeCompletoMouseEntered
+    {//GEN-HEADEREND:event_txtNomeCompletoMouseEntered
+        txtNomeCompleto.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomeCompletoMouseEntered
 
     private void txtEmailMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtEmailMouseEntered
     {//GEN-HEADEREND:event_txtEmailMouseEntered
@@ -188,10 +202,22 @@ public class CadastroCorretor extends javax.swing.JFrame
         txtEmail.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailActionPerformed
 
-    private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnSignUpActionPerformed
-    {//GEN-HEADEREND:event_btnSignUpActionPerformed
+    private void btnCadastrarCorretorActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnCadastrarCorretorActionPerformed
+    {//GEN-HEADEREND:event_btnCadastrarCorretorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSignUpActionPerformed
+    }//GEN-LAST:event_btnCadastrarCorretorActionPerformed
+
+    private void txtPassSenha1MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtPassSenha1MouseEntered
+    {//GEN-HEADEREND:event_txtPassSenha1MouseEntered
+        // TODO add your handling code here:
+        txtPassSenha1.setText("");
+    }//GEN-LAST:event_txtPassSenha1MouseEntered
+
+    private void txtPassSenha2MouseExited(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtPassSenha2MouseExited
+    {//GEN-HEADEREND:event_txtPassSenha2MouseExited
+        // TODO add your handling code here:
+        txtPassSenha2.setText("");
+    }//GEN-LAST:event_txtPassSenha2MouseExited
 
     /**
      * @param args the command line arguments
@@ -243,7 +269,7 @@ public class CadastroCorretor extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSignUp;
+    private javax.swing.JButton btnCadastrarCorretor;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -256,9 +282,9 @@ public class CadastroCorretor extends javax.swing.JFrame
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtNom;
+    private javax.swing.JTextField txtNomeCompleto;
+    private javax.swing.JPasswordField txtPassSenha1;
+    private javax.swing.JPasswordField txtPassSenha2;
     // End of variables declaration//GEN-END:variables
 }
