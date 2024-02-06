@@ -38,8 +38,6 @@ public class SignUp extends javax.swing.JFrame
         txtNome = new javax.swing.JTextField();
         txtSobrenome = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
-        txtSenha = new javax.swing.JTextField();
-        txtConfirmarSenha = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -50,6 +48,8 @@ public class SignUp extends javax.swing.JFrame
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        passSenha1 = new javax.swing.JPasswordField();
+        passSenha2 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -123,32 +123,6 @@ public class SignUp extends javax.swing.JFrame
         });
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 250, -1));
 
-        txtSenha.setBackground(new java.awt.Color(102, 102, 102));
-        txtSenha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtSenha.setForeground(new java.awt.Color(255, 255, 255));
-        txtSenha.setText("**********");
-        txtSenha.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseEntered(java.awt.event.MouseEvent evt)
-            {
-                txtSenhaMouseEntered(evt);
-            }
-        });
-        jPanel1.add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 250, -1));
-
-        txtConfirmarSenha.setBackground(new java.awt.Color(102, 102, 102));
-        txtConfirmarSenha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        txtConfirmarSenha.setForeground(new java.awt.Color(255, 255, 255));
-        txtConfirmarSenha.setText("**********");
-        txtConfirmarSenha.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseEntered(java.awt.event.MouseEvent evt)
-            {
-                txtConfirmarSenhaMouseEntered(evt);
-            }
-        });
-        jPanel1.add(txtConfirmarSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 250, -1));
-
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(222, 154, 74));
         jLabel5.setText("Nome");
@@ -167,12 +141,12 @@ public class SignUp extends javax.swing.JFrame
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(222, 154, 74));
         jLabel8.setText("Senha");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(222, 154, 74));
         jLabel9.setText("Confirmar Senha");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
 
         cBoxLembrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cBoxLembrar.setForeground(new java.awt.Color(222, 154, 74));
@@ -195,7 +169,7 @@ public class SignUp extends javax.swing.JFrame
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(222, 154, 74));
         jLabel10.setText("Esqueceu-se da Senha?");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 130, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 130, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(222, 154, 74));
@@ -206,6 +180,30 @@ public class SignUp extends javax.swing.JFrame
         jLabel13.setText("Criar Conta");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 480, 60, -1));
 
+        passSenha1.setBackground(new java.awt.Color(102, 102, 102));
+        passSenha1.setForeground(new java.awt.Color(255, 255, 255));
+        passSenha1.setText("jPasswordField1");
+        passSenha1.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                passSenha1MouseEntered(evt);
+            }
+        });
+        jPanel1.add(passSenha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 260, -1));
+
+        passSenha2.setBackground(new java.awt.Color(102, 102, 102));
+        passSenha2.setForeground(new java.awt.Color(255, 255, 255));
+        passSenha2.setText("jPasswordField2");
+        passSenha2.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseEntered(java.awt.event.MouseEvent evt)
+            {
+                passSenha2MouseEntered(evt);
+            }
+        });
+        jPanel1.add(passSenha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 260, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 520));
 
         pack();
@@ -215,17 +213,6 @@ public class SignUp extends javax.swing.JFrame
     {//GEN-HEADEREND:event_cBoxLembrarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cBoxLembrarActionPerformed
-
-    private void txtConfirmarSenhaMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtConfirmarSenhaMouseEntered
-    {//GEN-HEADEREND:event_txtConfirmarSenhaMouseEntered
-        txtConfirmarSenha.setText("");        // TODO add your handling code here:
-    }//GEN-LAST:event_txtConfirmarSenhaMouseEntered
-
-    private void txtSenhaMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtSenhaMouseEntered
-    {//GEN-HEADEREND:event_txtSenhaMouseEntered
-        txtSenha.setText("");
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSenhaMouseEntered
 
     private void txtEmailMouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_txtEmailMouseEntered
     {//GEN-HEADEREND:event_txtEmailMouseEntered
@@ -247,6 +234,18 @@ txtSobrenome.setText("");        // TODO add your handling code here:
     {//GEN-HEADEREND:event_txtNomeMouseEntered
 txtNome.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeMouseEntered
+
+    private void passSenha1MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_passSenha1MouseEntered
+    {//GEN-HEADEREND:event_passSenha1MouseEntered
+        // TODO add your handling code here:
+        passSenha1.setText("");
+    }//GEN-LAST:event_passSenha1MouseEntered
+
+    private void passSenha2MouseEntered(java.awt.event.MouseEvent evt)//GEN-FIRST:event_passSenha2MouseEntered
+    {//GEN-HEADEREND:event_passSenha2MouseEntered
+        // TODO add your handling code here:
+        passSenha2.setText("");
+    }//GEN-LAST:event_passSenha2MouseEntered
 
     /**
      * @param args the command line arguments
@@ -314,10 +313,10 @@ txtNome.setText("");        // TODO add your handling code here:
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtConfirmarSenha;
+    private javax.swing.JPasswordField passSenha1;
+    private javax.swing.JPasswordField passSenha2;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtSenha;
     private javax.swing.JTextField txtSobrenome;
     // End of variables declaration//GEN-END:variables
 }
