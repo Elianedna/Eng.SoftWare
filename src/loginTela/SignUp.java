@@ -33,6 +33,7 @@ public class SignUp extends javax.swing.JFrame
         jLabel11 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
@@ -46,8 +47,6 @@ public class SignUp extends javax.swing.JFrame
         cBoxLembrar = new javax.swing.JCheckBox();
         btnSignUp = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         passSenha1 = new javax.swing.JPasswordField();
         passSenha2 = new javax.swing.JPasswordField();
 
@@ -70,6 +69,19 @@ public class SignUp extends javax.swing.JFrame
         jLabel2.setForeground(new java.awt.Color(222, 154, 74));
         jLabel2.setText("SignUp");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 220, 60));
+
+        btnVoltar.setBackground(new java.awt.Color(102, 102, 102));
+        btnVoltar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVoltar.setForeground(new java.awt.Color(255, 255, 255));
+        btnVoltar.setText("Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, 80, 20));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Seja Bem-vindo! ");
@@ -171,15 +183,6 @@ public class SignUp extends javax.swing.JFrame
         jLabel10.setText("Esqueceu-se da Senha?");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, 130, -1));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel12.setText("Não têm uma Conta? ");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, -1, -1));
-
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        jLabel13.setText("Criar Conta");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 480, 60, -1));
-
         passSenha1.setBackground(new java.awt.Color(102, 102, 102));
         passSenha1.setForeground(new java.awt.Color(255, 255, 255));
         passSenha1.setText("jPasswordField1");
@@ -247,6 +250,11 @@ txtNome.setText("");        // TODO add your handling code here:
         passSenha2.setText("");
     }//GEN-LAST:event_passSenha2MouseEntered
 
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVoltarActionPerformed
+    {//GEN-HEADEREND:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVoltarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -298,12 +306,11 @@ txtNome.setText("");        // TODO add your handling code here:
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSignUp;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JCheckBox cBoxLembrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
