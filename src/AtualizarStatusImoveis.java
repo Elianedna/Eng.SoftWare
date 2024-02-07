@@ -35,7 +35,6 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
         jLabel4 = new javax.swing.JLabel();
         txtPreco = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         btnAlterarImoveis = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
@@ -50,6 +49,7 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
         txtNQ = new javax.swing.JTextField();
         txtNomeI = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,11 +97,6 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
         jLabel5.setForeground(new java.awt.Color(222, 154, 74));
         jLabel5.setText("Disponibilidade");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel6.setText("Voltar ao menu principal");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(222, 154, 74));
@@ -209,6 +204,19 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
         jLabel15.setText("Nome do Imovel");
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, -1, -1));
 
+        btnVoltar.setBackground(new java.awt.Color(102, 102, 102));
+        btnVoltar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVoltar.setForeground(new java.awt.Color(255, 255, 255));
+        btnVoltar.setText("Voltar ao Menu");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 140, 20));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -270,6 +278,11 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
         txtNomeI.setText("");
     }//GEN-LAST:event_txtNomeIMouseEntered
 
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVoltarActionPerformed
+    {//GEN-HEADEREND:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVoltarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -323,6 +336,7 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
     private javax.swing.JComboBox<String> boxD;
     private javax.swing.JComboBox<String> boxT;
     private javax.swing.JButton btnAlterarImoveis;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -333,7 +347,6 @@ public class AtualizarStatusImoveis extends javax.swing.JFrame
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

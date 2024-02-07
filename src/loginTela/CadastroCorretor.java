@@ -37,7 +37,6 @@ public class CadastroCorretor extends javax.swing.JFrame
         txtNomeCompleto = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         btnCadastrarCorretor = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
@@ -46,6 +45,7 @@ public class CadastroCorretor extends javax.swing.JFrame
         jLabel1 = new javax.swing.JLabel();
         txtPassSenha1 = new javax.swing.JPasswordField();
         txtPassSenha2 = new javax.swing.JPasswordField();
+        btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,11 +107,6 @@ public class CadastroCorretor extends javax.swing.JFrame
         jLabel5.setText("Nome Completo");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel6.setText("Voltar ao menu principal");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 480, -1, -1));
-
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(222, 154, 74));
         jLabel7.setText("E-mail");
@@ -170,6 +165,19 @@ public class CadastroCorretor extends javax.swing.JFrame
         });
         jPanel1.add(txtPassSenha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 370, 290, -1));
 
+        btnVoltar.setBackground(new java.awt.Color(102, 102, 102));
+        btnVoltar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVoltar.setForeground(new java.awt.Color(255, 255, 255));
+        btnVoltar.setText("Voltar ao Menu");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 480, 140, 20));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -216,6 +224,11 @@ public class CadastroCorretor extends javax.swing.JFrame
         // TODO add your handling code here:
         txtPassSenha2.setText("");
     }//GEN-LAST:event_txtPassSenha2MouseExited
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVoltarActionPerformed
+    {//GEN-HEADEREND:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,6 +281,7 @@ public class CadastroCorretor extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrarCorretor;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -276,7 +290,6 @@ public class CadastroCorretor extends javax.swing.JFrame
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;

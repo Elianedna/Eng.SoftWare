@@ -41,10 +41,10 @@ public class CadastrarEqManutencao extends javax.swing.JFrame
         jLabel9 = new javax.swing.JLabel();
         btnSignUp = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         passSenha1 = new javax.swing.JPasswordField();
         passSenha2 = new javax.swing.JPasswordField();
         jLabel14 = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -130,10 +130,6 @@ public class CadastrarEqManutencao extends javax.swing.JFrame
         jLabel10.setText("Esqueceu-se da Senha?");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 130, -1));
 
-        jLabel13.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel13.setText("Voltar ao menu principal");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, 140, -1));
-
         passSenha1.setBackground(new java.awt.Color(102, 102, 102));
         passSenha1.setForeground(new java.awt.Color(255, 255, 255));
         passSenha1.setText("jPasswordField1");
@@ -160,6 +156,19 @@ public class CadastrarEqManutencao extends javax.swing.JFrame
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/manuten3.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        btnVoltar.setBackground(new java.awt.Color(102, 102, 102));
+        btnVoltar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVoltar.setForeground(new java.awt.Color(255, 255, 255));
+        btnVoltar.setText("Voltar ao Menu");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 140, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -206,6 +215,11 @@ public class CadastrarEqManutencao extends javax.swing.JFrame
         // TODO add your handling code here:
         passSenha2.setText("");
     }//GEN-LAST:event_passSenha2MouseEntered
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVoltarActionPerformed
+    {//GEN-HEADEREND:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -258,9 +272,9 @@ public class CadastrarEqManutencao extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSignUp;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

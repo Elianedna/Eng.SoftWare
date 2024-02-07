@@ -35,7 +35,6 @@ public class CadastrarImoveis extends javax.swing.JFrame
         jLabel4 = new javax.swing.JLabel();
         txtPreco = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         btnCadastrarImoveis = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
@@ -50,6 +49,7 @@ public class CadastrarImoveis extends javax.swing.JFrame
         txtNQ = new javax.swing.JTextField();
         txtNomeI = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
+        btnVoltar3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,11 +97,6 @@ public class CadastrarImoveis extends javax.swing.JFrame
         jLabel5.setForeground(new java.awt.Color(222, 154, 74));
         jLabel5.setText("Disponibilidade");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel6.setText("Voltar ao menu principal");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(222, 154, 74));
@@ -209,6 +204,19 @@ public class CadastrarImoveis extends javax.swing.JFrame
         jLabel15.setText("Nome do Imovel");
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, -1, -1));
 
+        btnVoltar3.setBackground(new java.awt.Color(102, 102, 102));
+        btnVoltar3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnVoltar3.setForeground(new java.awt.Color(255, 255, 255));
+        btnVoltar3.setText("Voltar ao Menu");
+        btnVoltar3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnVoltar3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVoltar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 490, 140, 20));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -267,6 +275,11 @@ public class CadastrarImoveis extends javax.swing.JFrame
         txtNomeI.setText("");
     }//GEN-LAST:event_txtNomeIMouseEntered
 
+    private void btnVoltar3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnVoltar3ActionPerformed
+    {//GEN-HEADEREND:event_btnVoltar3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVoltar3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -320,6 +333,10 @@ public class CadastrarImoveis extends javax.swing.JFrame
     private javax.swing.JComboBox<String> boxD;
     private javax.swing.JComboBox<String> boxT;
     private javax.swing.JButton btnCadastrarImoveis;
+    private javax.swing.JButton btnVoltar;
+    private javax.swing.JButton btnVoltar1;
+    private javax.swing.JButton btnVoltar2;
+    private javax.swing.JButton btnVoltar3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
@@ -330,7 +347,6 @@ public class CadastrarImoveis extends javax.swing.JFrame
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
