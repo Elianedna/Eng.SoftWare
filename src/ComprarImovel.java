@@ -59,7 +59,7 @@ public class ComprarImovel extends javax.swing.JFrame
             },
             new String []
             {
-                "Seus Imoveis"
+                "Lista dos Imoveis disponiveis"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -73,8 +73,8 @@ public class ComprarImovel extends javax.swing.JFrame
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("SOLICITAÇÃO DE MANUTENÇÃO");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
+        jLabel5.setText("COMPRAR IMOVEL");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(222, 154, 74));
@@ -84,8 +84,8 @@ public class ComprarImovel extends javax.swing.JFrame
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel15.setText("Lista de Imoveis Associados");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
+        jLabel15.setText("Lista de Imoveis ");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 470, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Rectangle 15.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, -80, -1, 180));
@@ -107,16 +107,16 @@ public class ComprarImovel extends javax.swing.JFrame
         btnSolicitarManu.setBackground(new java.awt.Color(51, 102, 0));
         btnSolicitarManu.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSolicitarManu.setForeground(new java.awt.Color(255, 255, 255));
-        btnSolicitarManu.setText("Solicitar Manutencao");
-        jPanel1.add(btnSolicitarManu, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, -1, 40));
+        btnSolicitarManu.setText("Comprar Imovel");
+        jPanel1.add(btnSolicitarManu, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, -1, 40));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel4.setText("Descricao do Problema: ");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, -1, -1));
+        jLabel4.setText("Descricao do Imovel ");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 270, -1, -1));
 
         txtDescrica.setBackground(new java.awt.Color(222, 154, 74));
-        jPanel1.add(txtDescrica, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 300, 260, 120));
+        jPanel1.add(txtDescrica, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, 260, 120));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
