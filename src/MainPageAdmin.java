@@ -31,7 +31,7 @@ public class MainPageAdmin extends javax.swing.JFrame
         jPanel1 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        btnCadastrarImoveis = new javax.swing.JButton();
+        btnPerfil = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -39,7 +39,7 @@ public class MainPageAdmin extends javax.swing.JFrame
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnLogOut = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -59,18 +59,18 @@ public class MainPageAdmin extends javax.swing.JFrame
         jLabel2.setText("CASA EFICIENTE");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 310, 40));
 
-        btnCadastrarImoveis.setBackground(new java.awt.Color(222, 154, 74));
-        btnCadastrarImoveis.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnCadastrarImoveis.setForeground(new java.awt.Color(255, 255, 255));
-        btnCadastrarImoveis.setText("Perfil\n");
-        btnCadastrarImoveis.addActionListener(new java.awt.event.ActionListener()
+        btnPerfil.setBackground(new java.awt.Color(222, 154, 74));
+        btnPerfil.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnPerfil.setForeground(new java.awt.Color(255, 255, 255));
+        btnPerfil.setText("Perfil\n");
+        btnPerfil.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                btnCadastrarImoveisActionPerformed(evt);
+                btnPerfilActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCadastrarImoveis, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 150, 40));
+        jPanel1.add(btnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, 150, 40));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(222, 154, 74));
@@ -102,21 +102,21 @@ public class MainPageAdmin extends javax.swing.JFrame
         jLabel6.setText("jLabel1");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 160, 130));
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Log Out");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 470, 100, 30));
+        btnLogOut.setBackground(new java.awt.Color(51, 51, 51));
+        btnLogOut.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnLogOut.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogOut.setText("Log Out");
+        jPanel1.add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 470, 100, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Seja muito bem-vindo, que juntos possamos construir uma otima");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("historia juntos.");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image 5.png"))); // NOI18N
         jLabel5.setText("jLabel5");
@@ -127,10 +127,10 @@ public class MainPageAdmin extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCadastrarImoveisActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnCadastrarImoveisActionPerformed
-    {//GEN-HEADEREND:event_btnCadastrarImoveisActionPerformed
+    private void btnPerfilActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnPerfilActionPerformed
+    {//GEN-HEADEREND:event_btnPerfilActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCadastrarImoveisActionPerformed
+    }//GEN-LAST:event_btnPerfilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,8 +182,8 @@ public class MainPageAdmin extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCadastrarImoveis;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnLogOut;
+    private javax.swing.JButton btnPerfil;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;

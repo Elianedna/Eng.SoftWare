@@ -30,16 +30,20 @@ public class MainPageCorretor extends javax.swing.JFrame
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         btnCadastrarImoveis = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        btnAtualizar = new javax.swing.JButton();
+        btnContratos = new javax.swing.JButton();
+        btnPerfil = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,15 +55,10 @@ public class MainPageCorretor extends javax.swing.JFrame
         jLabel2.setText("CASA EFICIENTE");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 440, 40));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel7.setText("Endereco");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 440, -1, -1));
-
         btnCadastrarImoveis.setBackground(new java.awt.Color(222, 154, 74));
-        btnCadastrarImoveis.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnCadastrarImoveis.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnCadastrarImoveis.setForeground(new java.awt.Color(255, 255, 255));
-        btnCadastrarImoveis.setText("Perfil\n");
+        btnCadastrarImoveis.setText("Cadastrar Imovel");
         btnCadastrarImoveis.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -67,13 +66,13 @@ public class MainPageCorretor extends javax.swing.JFrame
                 btnCadastrarImoveisActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCadastrarImoveis, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 150, 40));
+        jPanel1.add(btnCadastrarImoveis, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 130, 20));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel10.setText("Numero de Quartos");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 180, -1));
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, -1, -1));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/change home 1.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/contract 1.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(222, 154, 74));
@@ -81,26 +80,73 @@ public class MainPageCorretor extends javax.swing.JFrame
         jLabel13.setText("Preco");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 534, 750, 30));
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(222, 154, 74));
-        jLabel15.setText("Nome do Imovel");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, -1, -1));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cadastrar.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 160, 130));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/home add.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cadastrar.png"))); // NOI18N
         jLabel4.setText("jLabel1");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, 160, 130));
 
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("historia juntos.");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Seja muito bem-vindo, que juntos possamos construir uma otima");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cadastrar.png"))); // NOI18N
         jLabel6.setText("jLabel1");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 160, 130));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image 5.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/corretorf.png"))); // NOI18N
         jLabel8.setText("jLabel8");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 100, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 100, 820, -1));
+
+        btnAtualizar.setBackground(new java.awt.Color(222, 154, 74));
+        btnAtualizar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnAtualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnAtualizar.setText("Actualizar Status do Imovel");
+        btnAtualizar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnAtualizarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAtualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 190, 20));
+
+        btnContratos.setBackground(new java.awt.Color(222, 154, 74));
+        btnContratos.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnContratos.setForeground(new java.awt.Color(255, 255, 255));
+        btnContratos.setText("Gerar Contrato ");
+        btnContratos.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnContratosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnContratos, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 420, 120, 20));
+
+        btnPerfil.setBackground(new java.awt.Color(222, 154, 74));
+        btnPerfil.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnPerfil.setForeground(new java.awt.Color(255, 255, 255));
+        btnPerfil.setText("Perfil\n");
+        btnPerfil.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnPerfilActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, 150, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -120,6 +166,21 @@ public class MainPageCorretor extends javax.swing.JFrame
     {//GEN-HEADEREND:event_btnCadastrarImoveisActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCadastrarImoveisActionPerformed
+
+    private void btnAtualizarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnAtualizarActionPerformed
+    {//GEN-HEADEREND:event_btnAtualizarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAtualizarActionPerformed
+
+    private void btnContratosActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnContratosActionPerformed
+    {//GEN-HEADEREND:event_btnContratosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnContratosActionPerformed
+
+    private void btnPerfilActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_btnPerfilActionPerformed
+    {//GEN-HEADEREND:event_btnPerfilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPerfilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -171,17 +232,21 @@ public class MainPageCorretor extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAtualizar;
     private javax.swing.JButton btnCadastrarImoveis;
+    private javax.swing.JButton btnContratos;
+    private javax.swing.JButton btnPerfil;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
